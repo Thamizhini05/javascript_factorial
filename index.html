@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>
+    Factorial(USING JAVASCRIPT)
+  </title>
+</head>
+<body style = "text-align:center;">
+    <button onclick="myFunction()">Click here Enter Value:</button>
+    <p id="demo"></p>
+     <script>
+        function myFunction() {
+  let n= Number(prompt("value:","0"));
+  let ans = 1;
+  if (n === 0 || n === 1) {
+    document.getElementById("demo").innerHTML ="ANS: 1";
+  }
+  if(n != 0)
+  {
+    for (var i = 2; i <= n; i++){
+             ans = ans * i;
+            }
+    document.getElementById("demo").innerHTML ="Factorial of "+n+ ": "+ans;
+  }
+    }
+    </script>  
+</body>
+</html>
+
